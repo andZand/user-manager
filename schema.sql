@@ -1,13 +1,13 @@
 
-CREATE TABLE `rights` (
+CREATE TABLE `permissions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE `rights_roles` (
+CREATE TABLE `permissions_roles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `right_id` int(11) DEFAULT NULL,
+  `permission_id` int(11) DEFAULT NULL,
   `role_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
